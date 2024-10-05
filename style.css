@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+h1, h2 {
+    color: #ffdd57;
+}
+
+p {
+    margin: 20px 0;
+}
+
+/* Cosmic Background */
+.cosmic-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: url('images/cosmic-bg.jpg') no-repeat center center/cover;
+    animation: cosmicAnimation 10s infinite;
+}
+
+@keyframes cosmicAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Gods Gallery */
+#gods-gallery {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.god {
+    margin: 20px;
+    text-align: center;
+}
+
+.god img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.god h3 {
+    margin: 10px 0;
+}
+
+.god p {
+    width: 200px;
+    color: #ccc;
+}
+
+/* Spirituality Section */
+#spirituality {
+    padding: 40px;
+    background-color: #111;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+footer p {
+    margin: 0;
+}
